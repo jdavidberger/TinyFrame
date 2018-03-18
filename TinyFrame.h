@@ -10,6 +10,10 @@
  * Upstream URL: https://github.com/MightyPork/TinyFrame
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define TF_VERSION "2.3.0"
 
 //---------------------------------------------------------------------------
@@ -521,6 +525,10 @@ extern void TF_WriteImpl(TinyFrame *tf, const uint8_t *buff, uint32_t len);
      */
     extern TF_CKSUM TF_CksumEnd(TF_CKSUM cksum);
 
+#endif
+
+#ifdef __cplusplus
+ }
 #endif
 
 #endif
